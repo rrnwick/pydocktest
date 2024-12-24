@@ -1,7 +1,11 @@
+# use a slim small base image
 FROM python:3.13-slim
 
+# create working dir in container
 WORKDIR /app
 
+# copy our apps source code into container
+# this method is not best for making changes to test
 COPY src .
 
 # install python packages
