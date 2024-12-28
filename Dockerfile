@@ -5,7 +5,9 @@ FROM python:3.13-slim
 WORKDIR /app
 
 # copy our apps source code into container
-# this method is not best for making changes to test
+# this run binding method allows changes to host src code 
+# to be shown within running container
+# docker run -it --mount type=bind,src=./src,dst=/app pydock bash
 COPY src .
 
 # install python packages
