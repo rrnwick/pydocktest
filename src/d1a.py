@@ -1,5 +1,3 @@
-import csv
-
 # initialise
 bothlist = []
 leftlist = []
@@ -27,10 +25,8 @@ for row in range(numrows):
     leftnum = int(leftlist[row])
     rightnum = int(rightlist[row])
     distance += abs(leftnum - rightnum)
-    
+
 # answer
 print('distance = ',distance)
 # distance =  2031679 correct!
 # added for testing live changes to source code for running container.
-
-
